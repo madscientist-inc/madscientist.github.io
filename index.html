@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>mad:scientist</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+  <title>Markdown to HTML</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-  <article class="markdown-body">
-    <!-- マークダウンファイルの内容を読み込む -->
-    <object data="example.md" type="text/markdown"></object>
-  </article>
+  <div id="markdown-content"></div>
+
+  <script>
+    // Markdownファイルの読み込み
+    fetch('example.md')
+      .then(response => response.text())
+      .then(markdown => {
+        // MarkdownをHTMLに変換して表示
+        const html = marked(markdown);
+        document.getElementById('markdown-content').innerHTML = html;
+      });
+  </script>
 </body>
 </html>
