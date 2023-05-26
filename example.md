@@ -32,7 +32,7 @@
 
 コードブロックの挿入:
 
-``` Python
+```Python
 import tkinter
 print("hello")
 ```
