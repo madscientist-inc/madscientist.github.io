@@ -32,10 +32,13 @@
 
 コードブロックの挿入:
 
-```Python
+<pre>
+<code class="language-python">
+Python
 import tkinter
 print("hello")
-```
+</code>
+</pre>
 
 - [ ] チェックボックス1
 - [x] チェックボックス2
