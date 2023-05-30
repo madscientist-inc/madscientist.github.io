@@ -1,0 +1,14 @@
+/* ヘッダー */
+.navbar-custom {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .navbar-custom .navbar-brand {
+    color: #fff;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
