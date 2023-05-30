@@ -32,7 +32,7 @@
 
 コードブロックの挿入:
 
-<pre width="50">
+<pre width="500">
  <code class="language-python">
  Python
  import tkinter
