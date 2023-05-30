@@ -32,12 +32,12 @@
 
 コードブロックの挿入:
 
-<pre>
-<code class="language-python">
-Python
-import tkinter
-print("hello")
-</code>
+<pre width="50">
+ <code class="language-python">
+ Python
+ import tkinter
+ print("hello")
+ </code>
 </pre>
 
 - [ ] チェックボックス1
