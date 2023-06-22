@@ -11,4 +11,47 @@
   .navbar-custom .navbar-nav .nav-link {
     color: #fff;
   }
-  
+
+  /* 共通のスタイル */
+  .sidebar {
+      width: 200px;
+      height: 100vh; /* ページの高さいっぱいにする */
+      background-color: #f2f2f2;
+      float: left; /* 左側にフロート */
+  }
+
+  /* 右側のサイドバーのスタイル */
+  .sidebar-right {
+       width: 200px;
+       height: 100vh; /* ページの高さいっぱいにする */
+       background-color: #f2f2f2;
+       float: right; /* 右側にフロート */
+  }
+
+  /* デスクトップ向けのスタイル */
+  @media screen and (min-width: 768px) {
+      /* .container {
+          display: flex;
+      } */
+
+      .sidebar {
+          flex: 0 0 200px; /* 固定の幅 */
+      }
+
+      /* .content {
+          flex: 1; 可変の幅 */
+          /* margin-left: 20px;
+      }  */
+  }
+
+  /* モバイル向けのスタイル */
+  @media screen and (max-width: 767px) {
+      .sidebar-right {
+          /* width: 100%; */
+          flex: 0 0 200px; /* 固定の幅 */
+      }
+
+      /* .content {
+          margin-top: 20px;
+      } */
+  }
