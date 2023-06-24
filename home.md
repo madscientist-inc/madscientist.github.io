@@ -12,4 +12,4 @@
 
 ### 1.　Piconard - Raspberry Pi用 Arduinoシールド互換拡張基板
 <br>
-　製品詳細は[こちら](/product/product.html)
+　製品詳細は [こちら] (https://madscientist-inc.github.io/madscientist.github.io/product/product.html)
