@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>prototype</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/prism.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- marked.js -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.7.0/marked.js"></script>   -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/marked@5.0.3/marked.min.js"></script> 使用不能 -->
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+  <body>
+    <div class="sidebar">
+      <!-- 左側のサイドバーのコンテンツ -->
+  </div>
+
+  <!-- ヘッダー -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">mad:scientist</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../../index.html">ホーム</a></li>
+            <li class="nav-item"><a class="nav-link" href="./product/product.html">製品</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="sidebar-right">
+    <!-- 右側のサイドバーのコンテンツ -->
+  </div>
+  <div id="markdown-content"></div>
+  <script>
+    // Markdownファイルの読み込み
+    fetch('product.md')
+      .then(response => response.text())
+      .then(markdown => {
+        // MarkdownをHTMLに変換して表示
+        const html = marked(markdown);
+        document.getElementById('markdown-content').innerHTML = html;
+      });
+  </script>
+  <script src="scripts/prism.js"></script>
+</body>
+</html>
